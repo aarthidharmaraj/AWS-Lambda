@@ -25,7 +25,10 @@ def lambda_handler(event,context):
             'temp':'cold'
         }
     )
+    response={
+        'message':'Item added successfully'
+    }
     return {
         'statusCode':200,
-        'body': 'Item added'
+        'body': response
     }
