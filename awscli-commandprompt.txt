@@ -1,0 +1,383 @@
+C:\Users\aarthi.dharmaraj>aws
+Note: AWS CLI version 2, the latest major version of the AWS CLI, is now stable and recommended for general use. For more information, see the AWS CLI version 2 installation instructions at: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
+
+usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]
+To see help text, you can run:
+
+  aws help
+  aws <command> help
+  aws <command> <subcommand> help
+aws: error: the following arguments are required: command
+
+C:\Users\aarthi.dharmaraj>aws help
+
+aws
+^^^
+
+
+Description
+***********
+
+The AWS Command Line Interface is a unified tool to manage your AWS
+services.
+
+
+Synopsis
+********
+
+   aws [options] <command> <subcommand> [parameters]
+
+Use *aws command help* for information on a specific command. Use *aws
+help topics* to view a list of available help topics. The synopsis for
+each command shows its parameters and their usage. Optional parameters
+are shown in square brackets.
+
+
+Options
+*******
+
+"--debug" (boolean)
+
+Turn on debug logging.
+
+"--endpoint-url" (string)
+
+Override command's default URL with the given URL.
+
+"--no-verify-ssl" (boolean)
+
+By default, the AWS CLI uses SSL when communicating with AWS services.
+For each SSL connection, the AWS CLI will verify SSL certificates.
+This option overrides the default behavior of verifying SSL
+certificates.
+
+"--no-paginate" (boolean)
+
+Disable automatic pagination.
+
+"--output" (string)
+
+The formatting style for command output.
+
+* json
+
+* text
+
+* table
+
+"--query" (string)
+
+A JMESPath query to use in filtering the response data.
+
+"--profile" (string)
+
+Use a specific profile from your credential file.
+
+"--region" (string)
+
+The region to use. Overrides config/env settings.
+
+"--version" (string)
+
+Display the version of this tool.
+
+"--color" (string)
+
+Turn on/off color output.
+
+* on
+
+* off
+
+* auto
+
+"--no-sign-request" (boolean)
+
+Do not sign requests. Credentials will not be loaded if this argument
+is provided.
+
+"--ca-bundle" (string)
+
+The CA certificate bundle to use when verifying SSL certificates.
+Overrides config/env settings.
+
+"--cli-read-timeout" (int)
+
+The maximum socket read time in seconds. If the value is set to 0, the
+socket read will be blocking and not timeout. The default value is 60
+seconds.
+
+"--cli-connect-timeout" (int)
+
+The maximum socket connect time in seconds. If the value is set to 0,
+the socket connect will be blocking and not timeout. The default value
+is 60 seconds.
+
+
+Available Services
+******************
+
+* accessanalyzer
+
+* account
+
+* acm
+
+* acm-pca
+
+* alexaforbusiness
+
+* amp
+
+* amplify
+
+* amplifybackend
+
+* amplifyuibuilder
+
+^C
+Terminate batch job (Y/N)? y
+
+C:\Users\aarthi.dharmaraj>aws cli ls
+Note: AWS CLI version 2, the latest major version of the AWS CLI, is now stable and recommended for general use. For more information, see the AWS CLI version 2 installation instructions at: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
+
+usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]
+To see help text, you can run:
+
+  aws help
+  aws <command> help
+  aws <command> <subcommand> help
+aws: error: argument command: Invalid choice, valid choices are:
+
+accessanalyzer                           | account
+acm                                      | acm-pca
+alexaforbusiness                         | amp
+amplify                                  | amplifybackend
+amplifyuibuilder                         | apigateway
+apigatewaymanagementapi                  | apigatewayv2
+appconfig                                | appconfigdata
+appflow                                  | appintegrations
+application-autoscaling                  | application-insights
+applicationcostprofiler                  | appmesh
+apprunner                                | appstream
+appsync                                  | athena
+auditmanager                             | autoscaling
+autoscaling-plans                        | backup
+backup-gateway                           | batch
+braket                                   | budgets
+ce                                       | chime
+chime-sdk-identity                       | chime-sdk-meetings
+chime-sdk-messaging                      | cloud9
+cloudcontrol                             | clouddirectory
+cloudformation                           | cloudfront
+cloudhsm                                 | cloudhsmv2
+cloudsearch                              | cloudsearchdomain
+cloudtrail                               | cloudwatch
+codeartifact                             | codebuild
+codecommit                               | codeguru-reviewer
+codeguruprofiler                         | codepipeline
+codestar                                 | codestar-connections
+codestar-notifications                   | cognito-identity
+cognito-idp                              | cognito-sync
+comprehend                               | comprehendmedical
+compute-optimizer                        | connect
+connect-contact-lens                     | connectparticipant
+cur                                      | customer-profiles
+databrew                                 | dataexchange
+datapipeline                             | datasync
+dax                                      | detective
+devicefarm                               | devops-guru
+directconnect                            | discovery
+dlm                                      | dms
+docdb                                    | drs
+ds                                       | dynamodb
+dynamodbstreams                          | ebs
+ec2                                      | ec2-instance-connect
+ecr                                      | ecr-public
+ecs                                      | efs
+eks                                      | elastic-inference
+elasticache                              | elasticbeanstalk
+elastictranscoder                        | elb
+elbv2                                    | emr
+emr-containers                           | es
+events                                   | evidently
+finspace                                 | finspace-data
+firehose                                 | fis
+fms                                      | forecast
+forecastquery                            | frauddetector
+fsx                                      | gamelift
+glacier                                  | globalaccelerator
+glue                                     | grafana
+greengrass                               | greengrassv2
+groundstation                            | guardduty
+health                                   | healthlake
+honeycode                                | iam
+identitystore                            | imagebuilder
+importexport                             | inspector
+inspector2                               | iot
+iot-data                                 | iot-jobs-data
+iot1click-devices                        | iot1click-projects
+iotanalytics                             | iotdeviceadvisor
+iotevents                                | iotevents-data
+iotfleethub                              | iotsecuretunneling
+iotsitewise                              | iotthingsgraph
+iottwinmaker                             | iotwireless
+ivs                                      | kafka
+kafkaconnect                             | kendra
+kinesis                                  | kinesis-video-archived-media
+kinesis-video-media                      | kinesis-video-signaling
+kinesisanalytics                         | kinesisanalyticsv2
+kinesisvideo                             | kms
+lakeformation                            | lambda
+lex-models                               | lex-runtime
+lexv2-models                             | lexv2-runtime
+license-manager                          | lightsail
+location                                 | logs
+lookoutequipment                         | lookoutmetrics
+lookoutvision                            | machinelearning
+macie                                    | macie2
+managedblockchain                        | marketplace-catalog
+marketplace-entitlement                  | marketplacecommerceanalytics
+mediaconnect                             | mediaconvert
+medialive                                | mediapackage
+mediapackage-vod                         | mediastore
+mediastore-data                          | mediatailor
+memorydb                                 | meteringmarketplace
+mgh                                      | mgn
+migration-hub-refactor-spaces            | migrationhub-config
+migrationhubstrategy                     | mobile
+mq                                       | mturk
+mwaa                                     | neptune
+network-firewall                         | networkmanager
+nimble                                   | opensearch
+opsworks                                 | opsworkscm
+organizations                            | outposts
+panorama                                 | personalize
+personalize-events                       | personalize-runtime
+pi                                       | pinpoint
+pinpoint-email                           | pinpoint-sms-voice
+polly                                    | pricing
+proton                                   | qldb
+qldb-session                             | quicksight
+ram                                      | rbin
+rds                                      | rds-data
+redshift                                 | redshift-data
+rekognition                              | resiliencehub
+resource-groups                          | resourcegroupstaggingapi
+robomaker                                | route53
+route53-recovery-cluster                 | route53-recovery-control-config
+route53-recovery-readiness               | route53domains
+route53resolver                          | rum
+s3control                                | s3outposts
+sagemaker                                | sagemaker-a2i-runtime
+sagemaker-edge                           | sagemaker-featurestore-runtime
+sagemaker-runtime                        | savingsplans
+schemas                                  | sdb
+secretsmanager                           | securityhub
+serverlessrepo                           | service-quotas
+servicecatalog                           | servicecatalog-appregistry
+servicediscovery                         | ses
+sesv2                                    | shield
+signer                                   | sms
+sms-voice                                | snow-device-management
+snowball                                 | sns
+sqs                                      | ssm
+ssm-contacts                             | ssm-incidents
+sso                                      | sso-admin
+sso-oidc                                 | stepfunctions
+storagegateway                           | sts
+support                                  | swf
+synthetics                               | textract
+timestream-query                         | timestream-write
+transcribe                               | transfer
+translate                                | voice-id
+waf                                      | waf-regional
+wafv2                                    | wellarchitected
+wisdom                                   | workdocs
+worklink                                 | workmail
+workmailmessageflow                      | workspaces
+workspaces-web                           | xray
+s3api                                    | s3
+configure                                | deploy
+configservice                            | opsworks-cm
+runtime.sagemaker                        | history
+help
+
+C:\Users\aarthi.dharmaraj>aws s3 ls
+
+Could not connect to the endpoint URL: "https://s3.amazonaws.com/"
+
+C:\Users\aarthi.dharmaraj>aws s3 ls
+
+An error occurred (AccessDenied) when calling the ListBuckets operation: Access Denied
+
+C:\Users\aarthi.dharmaraj>aws configure
+AWS Access Key ID [****************4Z6N]: Your access key
+AWS Secret Access Key [****************KUeW]: Your AWS secret access key
+Default region name [us-east-1]: us-east-1
+Default output format [json]: json
+
+C:\Users\aarthi.dharmaraj>aws s3 ls
+
+Could not connect to the endpoint URL: "https://s3.amazonaws.com/"
+
+C:\Users\aarthi.dharmaraj>aws s3 ls
+2022-02-24 16:46:35 athenagluesamp1
+2022-03-24 16:22:21 awslambadadestination1
+2022-03-24 16:21:48 awslambdasource1
+2022-02-18 12:37:10 boto3samp1
+2022-02-23 11:00:14 convertcsvtojsoninpandas
+2022-02-17 13:41:19 cross-region-sample
+2022-03-03 17:54:27 myspotifyplaylists
+2022-03-09 16:48:17 pyodbcpython
+2022-02-17 11:14:57 sample-1aar
+2022-02-17 12:47:57 sample2-aar
+
+C:\Users\aarthi.dharmaraj>aws s3 mb s3://samplebucketusingcli
+make_bucket: samplebucketusingcli
+
+C:\Users\aarthi.dharmaraj>aws s3 ls s3://convertcsvtojsoninpandas
+2022-02-23 13:16:10        470 CSVtoPandas.csv
+2022-02-23 13:16:15        456 ConvertedCSV.json
+2022-02-23 13:16:14       1005 ConvertedJSON.json
+
+C:\Users\aarthi.dharmaraj>aws s3 rb s3://samplebucketusingcli
+remove_bucket: samplebucketusingcli
+
+C:\Users\aarthi.dharmaraj>aws s3 mv s3://sample-1aar/sa/ s3://samplebucketusingcli
+move failed: s3://sample-1aar/sa/ to s3://samplebucketusingcli/ Parameter validation failed:
+Invalid length for parameter Key, value: 0, valid min length: 1
+
+C:\Users\aarthi.dharmaraj>aws s3 mv s3://sample-1aar s3://samplebucketusingcli
+
+C:\Users\aarthi.dharmaraj>aws s3 mv s3://sample-1aar/sa/image1.jfif s3://samplebucketusingcli
+move: s3://sample-1aar/sa/image1.jfif to s3://samplebucketusingcli/image1.jfif
+
+
+C:\Users\aarthi.dharmaraj>aws s3 cp replication.jfif s3://samplebucketusingcli
+upload: .\replication.jfif to s3://samplebucketusingcli/replication.jfif
+
+C:\Users\aarthi.dharmaraj>aws s3 cp replication.jfif s3://samplebucketusingcli/images/
+upload: .\replication.jfif to s3://samplebucketusingcli/images/replication.jfif
+
+C:\Users\aarthi.dharmaraj> aws s3 sync Documents s3://samplebucketusingcli/syncedDocuments
+warning: Skipping file C:\Users\aarthi.dharmaraj\Documents\My Music. File/Directory is not readable.
+warning: Skipping file C:\Users\aarthi.dharmaraj\Documents\My Pictures. File/Directory is not readable.
+warning: Skipping file C:\Users\aarthi.dharmaraj\Documents\My Videos. File/Directory is not readable.
+upload: Documents\desktop.ini to s3://samplebucketusingcli/syncedDocuments/desktop.ini
+upload: Documents\Default.rdp to s3://samplebucketusingcli/syncedDocuments/Default.rdp
+upload: Documents\index.html to s3://samplebucketusingcli/syncedDocuments/index.html
+
+C:\Users\aarthi.dharmaraj>aws s3 sync s3://samplebucketusingcli/syncedDocuments/ Documents
+warning: Skipping file C:\Users\aarthi.dharmaraj\Documents\My Music. File/Directory is not readable.
+warning: Skipping file C:\Users\aarthi.dharmaraj\Documents\My Pictures. File/Directory is not readable.
+warning: Skipping file C:\Users\aarthi.dharmaraj\Documents\My Videos. File/Directory is not readable.
+download: s3://samplebucketusingcli/syncedDocuments/index.html to Documents\index.html
+
+C:\Users\aarthi.dharmaraj>aws s3 sync s3://samplebucketusingcli/syncedDocuments Downloads
+download: s3://samplebucketusingcli/syncedDocuments/Default.rdp to Downloads\Default.rdp
+download: s3://samplebucketusingcli/syncedDocuments/desktop.ini to Downloads\desktop.ini
+download: s3://samplebucketusingcli/syncedDocuments/index.html to Downloads\index.html
+
+C:\Users\aarthi.dharmaraj>aws s3 mv s3://samplebucketusingcli/syncedDocuments/index.html Downloads
+move: s3://samplebucketusingcli/syncedDocuments/index.html to Downloads\index.html
